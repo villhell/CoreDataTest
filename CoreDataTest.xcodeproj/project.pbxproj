@@ -25,6 +25,8 @@
 		CE16FB5118AB9D7D007D1BCA /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE16FB2C18AB9D7D007D1BCA /* CoreData.framework */; };
 		CE16FB5918AB9D7D007D1BCA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE16FB5718AB9D7D007D1BCA /* InfoPlist.strings */; };
 		CE16FB5B18AB9D7D007D1BCA /* CoreDataTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE16FB5A18AB9D7D007D1BCA /* CoreDataTestTests.m */; };
+		CE16FB6618AB9DCE007D1BCA /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = CE16FB6518AB9DCE007D1BCA /* Test.m */; };
+		CE16FB6918AB9E2C007D1BCA /* CoreDataCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = CE16FB6818AB9E2C007D1BCA /* CoreDataCommon.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,10 @@
 		CE16FB5618AB9D7D007D1BCA /* CoreDataTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoreDataTestTests-Info.plist"; sourceTree = "<group>"; };
 		CE16FB5818AB9D7D007D1BCA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CE16FB5A18AB9D7D007D1BCA /* CoreDataTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataTestTests.m; sourceTree = "<group>"; };
+		CE16FB6418AB9DCE007D1BCA /* Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
+		CE16FB6518AB9DCE007D1BCA /* Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
+		CE16FB6718AB9E2C007D1BCA /* CoreDataCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataCommon.h; sourceTree = "<group>"; };
+		CE16FB6818AB9E2C007D1BCA /* CoreDataCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataCommon.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,7 +138,11 @@
 				CE16FB4418AB9D7D007D1BCA /* DetailViewController.m */,
 				CE16FB4618AB9D7D007D1BCA /* Images.xcassets */,
 				CE16FB3D18AB9D7D007D1BCA /* CoreDataTest.xcdatamodeld */,
+				CE16FB6418AB9DCE007D1BCA /* Test.h */,
+				CE16FB6518AB9DCE007D1BCA /* Test.m */,
 				CE16FB2F18AB9D7D007D1BCA /* Supporting Files */,
+				CE16FB6718AB9E2C007D1BCA /* CoreDataCommon.h */,
+				CE16FB6818AB9E2C007D1BCA /* CoreDataCommon.m */,
 			);
 			path = CoreDataTest;
 			sourceTree = "<group>";
@@ -264,8 +274,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE16FB4518AB9D7D007D1BCA /* DetailViewController.m in Sources */,
+				CE16FB6918AB9E2C007D1BCA /* CoreDataCommon.m in Sources */,
 				CE16FB4218AB9D7D007D1BCA /* MasterViewController.m in Sources */,
 				CE16FB3918AB9D7D007D1BCA /* AppDelegate.m in Sources */,
+				CE16FB6618AB9DCE007D1BCA /* Test.m in Sources */,
 				CE16FB3F18AB9D7D007D1BCA /* CoreDataTest.xcdatamodeld in Sources */,
 				CE16FB3518AB9D7D007D1BCA /* main.m in Sources */,
 			);

@@ -7,8 +7,9 @@
 //
 
 #import "MasterViewController.h"
-
 #import "DetailViewController.h"
+#import "CoreDataCommon.h"
+#import "Test.h"
 
 @interface MasterViewController ()
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
@@ -29,7 +30,40 @@
 
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
     self.navigationItem.rightBarButtonItem = addButton;
+    [self sample];
 }
+
+//Sample
+- (void)sample
+{
+    //宣言
+    CoreDataCommon* coredata = [[CoreDataCommon alloc] init];
+    
+    //追加
+    Test* test = (Test*)[coredata insertCoreData:@"Test"];
+    test.text = @"テスト";
+    test.number = [NSNumber numberWithInt:1];
+    [coredata save];
+    
+    //取得
+    NSMutableArray* array = [coredata getCoreData:@"Test" predicate:nil];
+
+    //編集
+    Test* test2 = (Test*)[array objectAtIndex:0];
+    test2.text = @"テストテスト";
+    test2.number = [NSNumber numberWithInt:2];
+    [coredata save];
+    
+    //取得
+    NSMutableArray* array2 = [coredata getCoreData:@"Test" predicate:nil];
+    
+    //削除
+    for (NSManagedObject* object in array2) {
+        [coredata deleteCoreData:object];
+    }
+    [coredata save];
+}
+//Sample
 
 - (void)didReceiveMemoryWarning
 {
@@ -124,14 +158,14 @@
     
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
     // Edit the entity name as appropriate.
-    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Event" inManagedObjectContext:self.managedObjectContext];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Test" inManagedObjectContext:self.managedObjectContext];
     [fetchRequest setEntity:entity];
     
     // Set the batch size to a suitable number.
     [fetchRequest setFetchBatchSize:20];
     
     // Edit the sort key as appropriate.
-    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"timeStamp" ascending:NO];
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"text" ascending:NO];
     NSArray *sortDescriptors = @[sortDescriptor];
     
     [fetchRequest setSortDescriptors:sortDescriptors];
@@ -216,7 +250,7 @@
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
 {
     NSManagedObject *object = [self.fetchedResultsController objectAtIndexPath:indexPath];
-    cell.textLabel.text = [[object valueForKey:@"timeStamp"] description];
+    cell.textLabel.text = [[object valueForKey:@"text"] description];
 }
 
 @end
