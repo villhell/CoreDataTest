@@ -7,15 +7,24 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "CoreDataCommon.h"
 #import <CoreData/CoreData.h>
 
-@interface MasterViewController : UITableViewController <NSFetchedResultsControllerDelegate>
+@interface MasterViewController : UIViewController <NSFetchedResultsControllerDelegate>{
+    int seqCount;
+    CoreDataCommon *coredata;
+}
 
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+@property (strong, retain) IBOutlet UITextView *textView;
 
-//sample Method
-- (void)sample;
+@property (nonatomic, retain) IBOutlet UIButton *btnInsert;
+@property (nonatomic, retain) IBOutlet UIButton *btnRead;
+@property (nonatomic, retain) IBOutlet UIButton *btnDelete;
 
+
+- (IBAction) Insert:(id)sender;
+- (IBAction) Read:(id)sender;
+- (IBAction) Delete:(id)sender;
 @end

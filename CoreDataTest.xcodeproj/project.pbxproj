@@ -17,7 +17,6 @@
 		CE16FB3C18AB9D7D007D1BCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE16FB3A18AB9D7D007D1BCA /* Main.storyboard */; };
 		CE16FB3F18AB9D7D007D1BCA /* CoreDataTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE16FB3D18AB9D7D007D1BCA /* CoreDataTest.xcdatamodeld */; };
 		CE16FB4218AB9D7D007D1BCA /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE16FB4118AB9D7D007D1BCA /* MasterViewController.m */; };
-		CE16FB4518AB9D7D007D1BCA /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE16FB4418AB9D7D007D1BCA /* DetailViewController.m */; };
 		CE16FB4718AB9D7D007D1BCA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE16FB4618AB9D7D007D1BCA /* Images.xcassets */; };
 		CE16FB4E18AB9D7D007D1BCA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE16FB4D18AB9D7D007D1BCA /* XCTest.framework */; };
 		CE16FB4F18AB9D7D007D1BCA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE16FB2618AB9D7D007D1BCA /* Foundation.framework */; };
@@ -55,8 +54,6 @@
 		CE16FB3E18AB9D7D007D1BCA /* CoreDataTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataTest.xcdatamodel; sourceTree = "<group>"; };
 		CE16FB4018AB9D7D007D1BCA /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
 		CE16FB4118AB9D7D007D1BCA /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		CE16FB4318AB9D7D007D1BCA /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		CE16FB4418AB9D7D007D1BCA /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		CE16FB4618AB9D7D007D1BCA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CE16FB4C18AB9D7D007D1BCA /* CoreDataTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE16FB4D18AB9D7D007D1BCA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -134,8 +131,6 @@
 				CE16FB3A18AB9D7D007D1BCA /* Main.storyboard */,
 				CE16FB4018AB9D7D007D1BCA /* MasterViewController.h */,
 				CE16FB4118AB9D7D007D1BCA /* MasterViewController.m */,
-				CE16FB4318AB9D7D007D1BCA /* DetailViewController.h */,
-				CE16FB4418AB9D7D007D1BCA /* DetailViewController.m */,
 				CE16FB4618AB9D7D007D1BCA /* Images.xcassets */,
 				CE16FB3D18AB9D7D007D1BCA /* CoreDataTest.xcdatamodeld */,
 				CE16FB6418AB9DCE007D1BCA /* Test.h */,
@@ -273,7 +268,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE16FB4518AB9D7D007D1BCA /* DetailViewController.m in Sources */,
 				CE16FB6918AB9E2C007D1BCA /* CoreDataCommon.m in Sources */,
 				CE16FB4218AB9D7D007D1BCA /* MasterViewController.m in Sources */,
 				CE16FB3918AB9D7D007D1BCA /* AppDelegate.m in Sources */,
@@ -488,6 +482,7 @@
 				CE16FB6018AB9D7D007D1BCA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE16FB6118AB9D7D007D1BCA /* Build configuration list for PBXNativeTarget "CoreDataTestTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +491,7 @@
 				CE16FB6318AB9D7D007D1BCA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
