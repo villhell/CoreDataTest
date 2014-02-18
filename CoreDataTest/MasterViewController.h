@@ -5,14 +5,13 @@
 //  Created by villhell on 2014/02/12.
 //  Copyright (c) 2014年 villhell. All rights reserved.
 //
-
+#import "CoreDataController.h"
 #import <UIKit/UIKit.h>
-#import "CoreDataCommon.h"
 #import <CoreData/CoreData.h>
 
+
 @interface MasterViewController : UIViewController <NSFetchedResultsControllerDelegate>{
-    int seqCount;
-    CoreDataCommon *coredata;
+    CoreDataController *controller;
 }
 
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;

@@ -26,6 +26,7 @@
 		CE16FB5B18AB9D7D007D1BCA /* CoreDataTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE16FB5A18AB9D7D007D1BCA /* CoreDataTestTests.m */; };
 		CE16FB6618AB9DCE007D1BCA /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = CE16FB6518AB9DCE007D1BCA /* Test.m */; };
 		CE16FB6918AB9E2C007D1BCA /* CoreDataCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = CE16FB6818AB9E2C007D1BCA /* CoreDataCommon.m */; };
+		CE1CB27018B392460026EE4F /* CoreDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1CB26F18B392460026EE4F /* CoreDataController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,8 @@
 		CE16FB6518AB9DCE007D1BCA /* Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
 		CE16FB6718AB9E2C007D1BCA /* CoreDataCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataCommon.h; sourceTree = "<group>"; };
 		CE16FB6818AB9E2C007D1BCA /* CoreDataCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataCommon.m; sourceTree = "<group>"; };
+		CE1CB26E18B392460026EE4F /* CoreDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataController.h; sourceTree = "<group>"; };
+		CE1CB26F18B392460026EE4F /* CoreDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +141,8 @@
 				CE16FB2F18AB9D7D007D1BCA /* Supporting Files */,
 				CE16FB6718AB9E2C007D1BCA /* CoreDataCommon.h */,
 				CE16FB6818AB9E2C007D1BCA /* CoreDataCommon.m */,
+				CE1CB26E18B392460026EE4F /* CoreDataController.h */,
+				CE1CB26F18B392460026EE4F /* CoreDataController.m */,
 			);
 			path = CoreDataTest;
 			sourceTree = "<group>";
@@ -271,6 +276,7 @@
 				CE16FB6918AB9E2C007D1BCA /* CoreDataCommon.m in Sources */,
 				CE16FB4218AB9D7D007D1BCA /* MasterViewController.m in Sources */,
 				CE16FB3918AB9D7D007D1BCA /* AppDelegate.m in Sources */,
+				CE1CB27018B392460026EE4F /* CoreDataController.m in Sources */,
 				CE16FB6618AB9DCE007D1BCA /* Test.m in Sources */,
 				CE16FB3F18AB9D7D007D1BCA /* CoreDataTest.xcdatamodeld in Sources */,
 				CE16FB3518AB9D7D007D1BCA /* main.m in Sources */,
